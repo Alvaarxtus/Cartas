@@ -1,4 +1,7 @@
 package cartas;
+
+import jugadores.jugadores;
+
 public class cartas {
     protected String nombre;
     protected int vida;
@@ -11,25 +14,19 @@ public class cartas {
         this.daño = daño;
     }
 
-    public void alColocarse(Jugador propio, Jugador enemigo) {
-
+    public void alColocarse(jugadores propio, jugadores enemigo) {
     }
 
     public void atacar(cartas objetivo) {
         if (!puedeAtacar) return;
-
-        objetivo.recibirDaño(this.daño);
+        objetivo.recibirDaño(daño);
     }
 
-    public void recibirDaño(int daño) {
-        vida -= daño;
+    public void recibirDaño(int d) {
+        vida -= d;
     }
 
     public boolean estaMuerta() {
         return vida <= 0;
-    }
-
-    public String getNombre() {
-        return nombre;
     }
 }
