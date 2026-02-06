@@ -1,6 +1,7 @@
 package cartas;
 
 import jugadores.jugadores;
+import tipo.TipoCarta;
 
 public class chillibill extends cartas {
 
@@ -13,5 +14,10 @@ public class chillibill extends cartas {
         for (cartas c : enemigo.getCartasEnMesa()) {
             c.recibirDaño(1);
         }
+    }
+
+    @Override
+    public TipoCarta getTipo() {
+        return TipoCarta.FUEGO;
     }
 }

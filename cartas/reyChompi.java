@@ -1,6 +1,7 @@
 package cartas;
 
 import jugadores.jugadores;
+import tipo.TipoCarta;
 
 public class reyChompi extends cartas {
 
@@ -11,5 +12,10 @@ public class reyChompi extends cartas {
     @Override
     public void alColocarse(jugadores propio, jugadores enemigo) {
         propio.curar(2);
+    }
+
+    @Override
+    public TipoCarta getTipo() {
+        return TipoCarta.ROCA;
     }
 }

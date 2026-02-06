@@ -2,6 +2,7 @@ package cartas;
 
 import jugadores.jugadores;
 import oveja.efectooveja;
+import tipo.TipoCarta;
 
 public class kaos extends cartas {
 
@@ -22,5 +23,10 @@ public class kaos extends cartas {
         if (mejor != null) {
             new efectooveja(mejor);
         }
+    }
+
+    @Override
+    public TipoCarta getTipo() {
+        return TipoCarta.MAGIA;
     }
 }
