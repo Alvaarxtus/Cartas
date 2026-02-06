@@ -3,6 +3,7 @@ package cartas;
 import jugadores.jugadores;
 
 public class cartas {
+
     protected String nombre;
     protected int vida;
     protected int daño;
@@ -28,5 +29,13 @@ public class cartas {
 
     public boolean estaMuerta() {
         return vida <= 0;
+    }
+
+    public void desactivarAtaque() {
+        puedeAtacar = false;
+    }
+
+    public void activarAtaque() {
+        puedeAtacar = true;
     }
 }

@@ -9,4 +9,3 @@ public class contadorrondas {
         j.getCartasEnMesa().removeIf(cartas::estaMuerta);
     }
 }
-

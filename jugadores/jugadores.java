@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import cartas.cartas;
 
 public class jugadores {
+
     private int vida;
     private ArrayList<cartas> cartasEnMesa;
 
