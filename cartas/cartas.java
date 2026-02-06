@@ -1,8 +1,9 @@
 package cartas;
 
 import jugadores.jugadores;
+import interfaces.Tipable;
 
-public class cartas {
+public abstract class cartas implements Tipable {
 
     protected String nombre;
     protected int vida;
