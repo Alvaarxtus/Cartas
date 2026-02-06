@@ -9,13 +9,13 @@ public class efectooveja {
 
     public efectooveja(cartas c) {
         this.carta = c;
-        carta.puedeAtacar = false;
+        carta.desactivarAtaque();
     }
 
     public void pasarRonda() {
         rondas--;
         if (rondas <= 0) {
-            carta.puedeAtacar = true;
+            carta.activarAtaque();
         }
     }
 }
